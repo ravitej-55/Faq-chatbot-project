@@ -1,17 +1,34 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Internship FAQ Chatbot 🤖</title>
-  </head>
-  <body>
-    <h2>Internship FAQ Chatbot 🤖</h2>
-    <p>Ask me anything about internships, application process, or our organization!</p>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Internship FAQ Chatbot</title>
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <style>
+    df-messenger {
+      --df-messenger-button-titlebar-color: #4a90e2;
+      --df-messenger-chat-background-color: #ffffff;
+      --df-messenger-font-color: #000000;
+      --df-messenger-send-icon: #4a90e2;
+      position: fixed;
+      bottom: 16px;
+      right: 16px;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Internship FAQ Chatbot 🤖</h1>
+  <p>Ask anything about internships, application process, or our organization.</p>
 
-    <p>
-      👉 Click here to open the chatbot:<br>
-      <a href="https://bot.dialogflow.com/fe87896e-df06-41e5-b268-0a38920b0878" target="_blank">
-        Open Chatbot in New Tab
-      </a>
-    </p>
-  </body>
+  <df-messenger
+    intent="WELCOME"
+    chat-title="Internship_bot"
+    agent-id="fe87896e-df06-41e5-b268-0a38920b0878"
+    language-code="en"
+  ></df-messenger>
+</body>
 </html>
